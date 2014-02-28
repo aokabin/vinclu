@@ -75,7 +75,6 @@ var Page = function(){
     
     //LED の ON/OFF
     this.clickBtnLed1 = function( ev ){
-        this.allOff();
         if(this.led1.isOn == false){
            this.led1.on();
         }
