@@ -76,6 +76,7 @@ var Page = function(){
     //LED の ON/OFF
     this.clickBtnLed1 = function( ev ){
         var led = this.led1;
+        alert("タッチしたね！");
         console.log(this.led1);
         setInterval(function(){
             led.frequencyL = 0.1;
