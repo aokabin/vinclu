@@ -78,15 +78,11 @@ var Page = function(){
         var led = this.led1;
         alert("タッチしたね！");
         console.log(this.led1);
-        setInterval(function(){
-            led.frequencyL = 0.1;
-            if(led.isOn == false){
-                console.log(led);
-                led.on();
-            }
-        }, 1000);
-
-
+        led.frequencyL = 0.1;
+        if(led.isOn == false){
+            console.log(led);
+            led.on();
+        }
     };
     
     //点滅1
