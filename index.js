@@ -75,9 +75,17 @@ var Page = function(){
     
     //LED の ON/OFF
     this.clickBtnLed1 = function( ev ){
-        if(this.led1.isOn == false){
-           this.led1.on();
-        }
+        var led = this.led1;
+        console.log(this.led1);
+        setInterval(function(){
+            led.frequencyL = 0.1;
+            if(led.isOn == false){
+                console.log(led);
+                led.on();
+            }
+        }, 1000);
+
+
     };
     
     //点滅1
