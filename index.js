@@ -78,6 +78,7 @@ var Page = function(){
         var led = this.led1;
         alert("タッチしたね！");
         console.log(this.led1);
+        this.allOff();
         led.frequencyL = 0.1;
         if(led.isOn == false){
             console.log(led);
